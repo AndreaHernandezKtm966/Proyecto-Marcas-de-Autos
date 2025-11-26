@@ -39,7 +39,7 @@ document.getElementById("Ferrari").addEventListener("click", () => {
 
 document.getElementById("Lamborghini").addEventListener("click", () => {
 
-    document.body.style.backgroundImage = "url('Imagenes/Lamborghini.png')";
+    document.body.style.backgroundImage = "url('Imagenes/lamborghini.png')";
 
 });
 
@@ -47,7 +47,7 @@ document.getElementById("Lamborghini").addEventListener("click", () => {
 
 document.getElementById("BMW").addEventListener("click", () => {
 
-    document.body.style.backgroundImage = "url('Imagenes/BMW.png')";
+    document.body.style.backgroundImage = "url('Imagenes/bmw.png')";
 
 });
 
