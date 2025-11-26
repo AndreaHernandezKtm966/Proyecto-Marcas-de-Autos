@@ -1,60 +1,78 @@
-const toppings = document.getElementsByClassName('topping');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
 
-for (const topping of toppings) {
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background: url(imagenes/login.png) no-repeat center center/cover;
+}
 
-    
-    topping.addEventListener('mouseenter', () => {
-        topping.classList.add('hover-color');
-    });
+/* Contenido */
+#contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    width: 80vw;
+    max-width: 600px;
+    background-color: aliceblue;
+    border: 4px solid black;
+}
 
-  
-    topping.addEventListener('mouseleave', () => {
-        topping.classList.remove('hover-color');
-    });
+h1{
+    width: 100%;
+    font-size: 3rem;
+    margin: 20px 10px;
+}
 
-
-    topping.addEventListener('click', () => {
-
+ul {
    
-        for (const t of toppings) {
-            t.classList.remove('selected-color');
-        }
-
-      
-        topping.classList.add('selected-color');
-
-        console.log(topping.innerText);
-    });
+    width: 100%;
+    height: 100%;
+    
 }
 
 
+.topping {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    margin: 15px 0;
 
-document.getElementById("Ferrari").addEventListener("click", () => {
-
-    document.body.style.backgroundImage = "url('Imagenes/Ferrari.png')";
-
-});
-
-
-
-document.getElementById("Lamborghini").addEventListener("click", () => {
-
-    document.body.style.backgroundImage = "url('Imagenes/lamborghini.png')";
-
-});
-
-
-
-document.getElementById("BMW").addEventListener("click", () => {
-
-    document.body.style.backgroundImage = "url('Imagenes/bmw.png')";
-
-});
+}
+.fondo-marron {
+    background-color: #0707f4;
 
 
+}
 
-document.getElementById("Mercedes").addEventListener("click", () => {
+.fondo-naranja {
+    background-color: #080708;
+}
 
-    document.body.style.backgroundImage = "url('Imagenes/Mercedes.png')";
+.texto-verde {
+    color: rgb(14, 3, 12);
+}
 
-});
+
+.hover-color {
+    background-color: #686b6e 
+}
+
+.selected-color {
+    background-color: #607ae1 
+}
